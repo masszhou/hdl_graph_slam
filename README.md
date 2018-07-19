@@ -1,3 +1,8 @@
+# My Changes
+* adapt this project with the g2o master branch. Interfaces of g2o have changed, e.g. in g2o/core/eigen_types.h
+* original repo worked on my computer only for small data set. for large data set, there was error in graph optimization in graph_slam.cpp
+* try to fix and adapt to my data set (VLP 32C)
+
 # hdl_graph_slam
 ***hdl_graph_slam*** is an open source ROS package for real-time 3D slam using a 3D LIDAR. It is based on 3D Graph SLAM with NDT scan matching-based odometry estimation and loop detection. It also utilizes floor plane detection to generate an environmental map with a completely flat floor. We have tested this packaged mainly in indoor environments, but it can be applied to outdoor environment mapping as well.
 
