@@ -28,6 +28,7 @@ message(STATUS "PCL_INCLUDE_DIRS:" ${PCL_INCLUDE_DIRS})
 message(STATUS "PCL_LIBRARY_DIRS:" ${PCL_LIBRARY_DIRS})
 message(STATUS "PCL_DEFINITIONS:" ${PCL_DEFINITIONS})
 
+set (G2O_INCLUDE_DIR /usr/local/include)
 find_package(G2O REQUIRED)
 include_directories(SYSTEM ${G2O_INCLUDE_DIR} ${G2O_INCLUDE_DIRS})
 link_directories(${G2O_LIBRARY_DIRS})
